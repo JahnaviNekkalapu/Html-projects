@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?bus,road') no-repeat center center/cover;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #004d99, #00aaff);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Main Content */
+        #main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .booking-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #00aaff;
+            box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+            outline: none;
+        }
+
+        .cta-btn {
+            padding: 15px;
+            background-color: #ff5e57;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff3f34;
+        }
+
+        /* Footer */
+        footer {
+            background: #004d99;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bus Ticket Booking</h1>
+        <p>Travel with comfort and convenience!</p>
+    </header>
+
+    <section id="main-content">
+        <h2>Book Your Bus Tickets</h2>
+        <p>Choose your destination, select a date, and reserve your seat today!</p>
+
+        <div class="booking-form">
+            <div class="form-group">
+                <label for="from">From</label>
+                <input type="text" id="from" name="from" placeholder="Enter your departure city" required>
+            </div>
+            <div class="form-group">
+                <label for="to">To</label>
+                <input type="text" id="to" name="to" placeholder="Enter your destination city" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button class="cta-btn">Book Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bus Ticket Booking | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
